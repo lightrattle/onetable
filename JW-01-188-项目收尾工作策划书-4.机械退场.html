@@ -10,11 +10,18 @@
     border: 0;
   }
 
-  td {
-    word-wrap: break-word;
-    white-space: normal;
-  }
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    }
 
+    td {
+    /* width: 25%; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
     *[contenteditable="true"]:empty:before{
         content:attr(placeholder);
         color: #A9A9A9;
